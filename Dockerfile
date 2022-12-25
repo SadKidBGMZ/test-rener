@@ -1,16 +1,12 @@
-FROM python:3.9
-
-WORKDIR /app
-
-COPY requirements.txt /app/
+FROM python:3.8-slim-buster
 
 RUN apt update && apt upgrade -y
-RUN apt install git python3-pip ffmpeg -y
+RUN apt install git -y
+COPY requirements.txt /requirements.txt
 
-COPY . .
-
-RUN pip3 install -r requirements.txt
-
-COPY . /app
-
-CMD python3 bot.py
+RUN cd /
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+RUN mkdir /Matrix-02
+WORKDIR /Matrix-02
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
