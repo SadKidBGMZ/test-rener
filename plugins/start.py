@@ -19,7 +19,7 @@ from helper.date import add_date ,check_expi
 CHANNEL = os.environ.get('CHANNEL',"KR_BOtz")
 import datetime
 from datetime import date as date_
-STRING = "Config.STRING_TXT"
+STRING = "Config.STRING_SESSION"
 log_channel = int(os.environ.get("LOG_CHANNEL","-1001580040547"))
 token = os.environ.get('TOKEN','5377834462:AAFr_4q9Sw3RtGPoMtgkxy-w4A6TE8oN_0w')
 botid = token.split(':')[0]
