@@ -5,7 +5,7 @@ class Config:
     API_ID = int(os.environ.get("API_ID", '6795023'))
     API_HASH = os.environ.get("API_HASH", '48eb04ae416967495ba9930f87d4f4da')
     PAID_BOT = os.environ.get("PAID_BOT", "YES")
-    STRING_SESSION = os.environ.get("STRING_SESSION", "AQDHcnQAjG81efKGAqsDjG6mJrncMF9Tqb7HmWM-9tFDt8Ot4UXEQPaLyarOVd_voUfS05xzZ8ZdVQGr6CORALmLyWSBm7SoV0TxIFxYns4hM-EjithAal1BhyR2HFLwxZiwVpxkYcuLVdI3a87KFJkdORgBNAPwgpz2Q9lNHZTEJmr1a1QMj7t2vakuB96IBwbBCbwCgsNrqBCBxEhbabi8n6PcxxhW39LzMQhj9Ac_NRX8Ak2un9L2c6drMn4qMx0DFL-RDsSh4UWA_UzNol3-R5STVXw0iBaxNCyTUbsNEiX_lYXPWPk3QZ2z2Rs1w3mKpIdGzzipnmKffP-Gg9iJqlZjPwAAAAFB5XkyAA")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "BQDMOvAACtNs-VchfumyK9k5-nCNC07ktlBNprSCibT8v6TlKUld6ZCdmSweiwaB9dYKGUGUDJoVmwk76Di47l9KaeEfBO_6ly7autQqKVoaV0t51FOqxtQQ5sm1zKT4qfvV0zUnw-2nY4yUEzCJJ-2OADSkzQXUDWq_0R1WEDvDOrwUVu6Q92Yliu3yOvUe-yYF9Cd9aiUZO8oOl2Lr5ljVBOQXD1s-acZV_80Ltf20fTkuYym6Bv1zrdvyXuyiBBaQKv_cwHaXcjmAlxvmQaBE-N75q8C_TazXigo0Uflhpqj7MzZoLJZQWw15Tci7RITeErIKtRFC7u6JhnbLDIEZ_uuWYgAAAABZsWSfAA")
     AUTH_USERS =  [int(i) for i in os.environ.get("AUTH_USERS", "5400525106 1504797855").split(" ")]
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "5028427286:AAGggDShZZwX7lnfkeaH9i0FalwBBkh2cGU")
     DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://dkbotzon:dkbotzon@cluster0.q9dkemw.mongodb.net/?retryWrites=true&w=majority")
