@@ -6,6 +6,7 @@ from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceRep
 import humanize
 from helper.progress import humanbytes
 from helper.txt import kr
+from config import Config
 
 from pyrogram.errors import QueryIdInvalid
 from pyrogram. types import InlineQuery
