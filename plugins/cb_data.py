@@ -20,7 +20,7 @@ API_ID = int(os.environ.get("API_ID", "13384432"))
 
 API_HASH = os.environ.get("API_HASH", "ea9db4503ed7088b788e06dfd818e00e")
 
-STRING = "Config.STRING_TXT"
+STRING = "Config.STRING_SESSION"
 
 app = Client("test", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
 
