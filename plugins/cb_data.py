@@ -13,6 +13,7 @@ from datetime import timedelta,datetime
 from helper.ffmpeg import take_screen_shot,fix_thumb
 from helper.progress import humanbytes
 from helper.set import escape_invalid_curly_brackets
+from config import Config
 
 log_channel = int(os.environ.get("LOG_CHANNEL", "-1001580040547"))
 
