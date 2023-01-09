@@ -1,12 +1,8 @@
 import os
 
-    ACTIVE_DOWNLOADS = {}
-
     API_ID = int(os.environ.get("API_ID", '6795023'))
 
     API_HASH = os.environ.get("API_HASH", '48eb04ae416967495ba9930f87d4f4da')
-
-    PAID_BOT = os.environ.get("PAID_BOT", "YES")
 
     STRING = os.environ.get("STRING_SESSION", "BQDMOvAACtNs-VchfumyK9k5-nCNC07ktlBNprSCibT8v6TlKUld6ZCdmSweiwaB9dYKGUGUDJoVmwk76Di47l9KaeEfBO_6ly7autQqKVoaV0t51FOqxtQQ5sm1zKT4qfvV0zUnw-2nY4yUEzCJJ-2OADSkzQXUDWq_0R1WEDvDOrwUVu6Q92Yliu3yOvUe-yYF9Cd9aiUZO8oOl2Lr5ljVBOQXD1s-acZV_80Ltf20fTkuYym6Bv1zrdvyXuyiBBaQKv_cwHaXcjmAlxvmQaBE-N75q8C_TazXigo0Uflhpqj7MzZoLJZQWw15Tci7RITeErIKtRFC7u6JhnbLDIEZ_uuWYgAAAABZsWSfAA")
 
@@ -20,14 +16,4 @@ import os
 
     DB_NAME = os.environ.get("DATABASE_NAME", "MrTamilKiD")
 
-    DOWNLOAD_LOCATION = "./DOWNLOADS"
-
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL") 
-
-    RESTART_TIME = []
-
-    TIME_GAP1 = {}
-
-    TIME_GAP2 = {}
-
-    timegap_message = {}
