@@ -16,6 +16,8 @@ import os
 
     DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://dkbotzon:dkbotzon@cluster0.q9dkemw.mongodb.net/?retryWrites=true&w=majority")
 
+    DATABASE_NAME = os.environ.get("DATABASE_NAME", "MrTamilKiD")
+
     DOWNLOAD_LOCATION = "./DOWNLOADS"
 
     DB_CHANNEL_ID = -1001769216579
