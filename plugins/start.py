@@ -6,23 +6,20 @@ from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceRep
 import humanize
 from helper.progress import humanbytes
 from helper.txt import kr
-from config import Config
+from config import CHANNEL, STRING, LOG_CHANNEL
 
 from pyrogram.errors import QueryIdInvalid
 from pyrogram. types import InlineQuery
 from pyrogram.types import InputTextMessageContent
 from pyrogram.types import InlineQueryResultArticle
-
 from helper.database import  insert ,find_one,used_limit,usertype,uploadlimit,addpredata,total_rename,total_size
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import add_date ,check_expi
-CHANNEL = os.environ.get('CHANNEL',"KR_BOtz")
 import datetime
 from datetime import date as date_
-STRING = "Config.STRING_SESSION"
-log_channel = int(os.environ.get("LOG_CHANNEL","-1001580040547"))
-token = os.environ.get('TOKEN','5377834462:AAFr_4q9Sw3RtGPoMtgkxy-w4A6TE8oN_0w')
+log_channel = "LOG_CHANNEL"
+token = "BOT_TOKEN"
 botid = token.split(':')[0]
 
 #Part of Day --------------------
