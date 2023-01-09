@@ -1,9 +1,9 @@
 
 {
 
-    "name": "Renamer Bot",
+    "name": "RenamerPro Bot",
 
-    "description": "Telegram File Renamer Bot 4GB ",
+    "description": "Telegram File Renamer Bot 4GB Support added",
 
     "keywords": [
 
@@ -21,7 +21,7 @@
 
     "env": {
 
-        "CHANNEL": {
+        "AUTH_CHANNEL": {
 
             "description": "Channel or Group user Name With @",
 
@@ -31,7 +31,7 @@
 
          },
 
-        "STRING": {
+        "STRING_SESSION": {
 
             "description": "Pyrogram String Session Use  @genStr_Bot",
 
@@ -55,7 +55,7 @@
 
         },
 
-        "TOKEN": {
+        "BOT_TOKEN": {
 
             "description": "Your Bot Token From @BotFather",
 
@@ -63,7 +63,7 @@
 
         },
 
-        "ADMIN": {
+        "AUTH_USERS": {
 
             "description":"Add Your User ID",
 
@@ -71,13 +71,13 @@
 
         },
 
-        "DB_URL":{
+        "DATABASE_URL":{
 
              "description":"Database Url Get It From Mongo DB"
 
         },
 
-        "DB_NAME":{
+        "DATABASE_NAME":{
 
                "description":"Database Name ",
 
