@@ -6,7 +6,7 @@ from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceRep
 import humanize
 from helper.progress import humanbytes
 from helper.txt import kr
-from config import CHANNEL, STRING, LOG_CHANNEL
+from config import CHANNEL, STRING, LOG_CHANNEL, BOT_TOKEN
 
 from pyrogram.errors import QueryIdInvalid
 from pyrogram. types import InlineQuery
