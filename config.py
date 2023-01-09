@@ -1,6 +1,15 @@
 import re
 from os import environ
 
+id_pattern = re.compile(r'^.\d+$')
+def is_enabled(value, default):
+    if value.lower() in ["true", "yes", "1", "enable", "y"]:
+        return True
+    elif value.lower() in ["false", "no", "0", "disable", "n"]:
+        return False
+    else:
+        return default
+
     API_ID = int(os.environ.get("API_ID", '6795023'))
 
     API_HASH = os.environ.get("API_HASH", '48eb04ae416967495ba9930f87d4f4da')
