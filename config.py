@@ -20,10 +20,10 @@ STRING = environ['STRING_SESSION', 'BQDMOvAACtNs-VchfumyK9k5-nCNC07ktlBNprSCibT8
 # Admins, Channels & Users
 
 ADMIN =  [int(i) for i in os.environ.get("AUTH_USERS", "5400525106 1504797855").split(" ")]
-CHANNEL = os.environ.get('AUTH_CHANNEL')
-LOG_CHANNEL = os.environ.get("LOG_CHANNEL") 
+CHANNEL = environ['AUTH_CHANNEL']
+LOG_CHANNEL = environ["LOG_CHANNEL"]
 
 # MongoDB information
 
-DB_URL = os.environ.get("DATABASE_URL", "mongodb+srv://dkbotzon:dkbotzon@cluster0.q9dkemw.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "MrTamilKiD")
+DB_URL = environ['DATABASE_URL', 'mongodb+srv://dkbotzon:dkbotzon@cluster0.q9dkemw.mongodb.net/?retryWrites=true&w=majority']
+DB_NAME = environ['DATABASE_NAME', 'MrTamilKiD']
