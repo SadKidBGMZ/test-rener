@@ -25,7 +25,7 @@
 
             "description": "Channel or Group user Name With @",
 
-            "required":true
+            "required":false
 
             
 
@@ -35,7 +35,7 @@
 
             "description": "Pyrogram String Session Use  @genStr_Bot",
 
-            "required": true
+            "required": false
 
         },
 
@@ -43,7 +43,7 @@
 
             "description": "Your APP ID From my.telegram.org ",
 
-            "required": true
+            "required": false
 
         },
 
@@ -51,7 +51,7 @@
 
             "description": "Your API Hash From my.telegram.org ",
 
-            "required": true
+            "required": false
 
         },
 
@@ -59,7 +59,7 @@
 
             "description": "Your Bot Token From @BotFather",
 
-            "required": true
+            "required": false
 
         },
 
@@ -67,7 +67,7 @@
 
             "description":"Add Your User ID",
 
-            "required": true
+            "required": false
 
         },
 
@@ -81,7 +81,7 @@
 
                "description":"Database Name ",
 
-               "required":true
+               "required":false
 
         },
 
@@ -89,7 +89,7 @@
 
              "description":"Channel Id Nedd Store Files Get Your channel id from Rose @MissRose_bot",
 
-             "required": true
+             "required": false
 
         }
 
