@@ -101,32 +101,3 @@ async def statuss_(bot, update):
 
 
 
-@Client.on_message(filters.command(["restart"]) & filters.user(Config.AUTH_USERS))
-async def bot_restart(bot, update):
-
-    try:
-        await update.reply_text("**♻️ Restarted Successfully **")
-    except:
-        pass
-
-    try:
-        shutil.rmtree(Config.DOWNLOAD_PATH)
-        logger.info("Deleted DOWNLOAD_PATH successfully ✅")
-    except:
-        pass
-
-    try:
-        procs = psprocess(worker.pid)
-        for proc in procs.children(recursive=True):
-            proc.kill()
-        procs.kill()
-    except Exception as e:
-        print(e)
-
-    try:
-        logger.info(
-            f"{update.from_user.id} {update.from_user.first_name} : Restarting..."
-        )
-        execl(executable, executable, "run_clients.py")
-    except Exception as e:
-        print(e)
