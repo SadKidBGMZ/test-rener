@@ -13,15 +13,9 @@ from datetime import timedelta,datetime
 from helper.ffmpeg import take_screen_shot,fix_thumb
 from helper.progress import humanbytes
 from helper.set import escape_invalid_curly_brackets
-from config import Config
+from config import API_ID, API_HASH, STRING
 
-log_channel = int(os.environ.get("LOG_CHANNEL", "-1001580040547"))
-
-API_ID = int(os.environ.get("API_ID", "13384432"))
-
-API_HASH = os.environ.get("API_HASH", "ea9db4503ed7088b788e06dfd818e00e")
-
-STRING = "Config.STRING_SESSION"
+log_channel = "LOG_CHANNEL"
 
 app = Client("test", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
 
