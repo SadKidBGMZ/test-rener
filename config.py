@@ -10,7 +10,7 @@ STRING = environ['STRING_SESSION']
 
 # Admins, Channels & Users
 
-ADMIN =  [int(i) for i in os.environ.get("AUTH_USERS", "5400525106 1504797855").split(" ")]
+ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 CHANNEL = environ['AUTH_CHANNEL']
 LOG_CHANNEL = environ["LOG_CHANNEL"]
 
