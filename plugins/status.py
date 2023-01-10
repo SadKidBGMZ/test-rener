@@ -57,7 +57,7 @@ def get_readable_time(seconds: int) -> str:
     return result
 
 
-@Client.on_message(filters.command(["stats"]) & filters.user(Config.AUTH_USERS))
+@Client.on_message(filters.command(["stats"]) & filters.user(AUTH_USERS))
 async def statuss_(bot, update):
     currentTime = get_readable_time(time() - Start_Time)
     total, used, free, disk = disk_usage("/")
