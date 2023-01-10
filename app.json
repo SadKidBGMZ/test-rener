@@ -75,6 +75,8 @@
 
              "description":"Database Url Get It From Mongo DB", 
 
+             "required": false
+
         },
 
         "DATABASE_NAME":{
