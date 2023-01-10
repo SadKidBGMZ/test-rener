@@ -19,7 +19,7 @@ from psutil import (
 from pyrogram import Client, enums, filters
 from pyrogram.errors import FloodWait, RPCError
 
-from config import API_ID, API_HASH, STRING, ADMIN, CHANNEL, BOT_TOKEN, DB_URL, DB_NAME, LOG_CHANNEL
+from config import API_ID, API_HASH, STRING, AUTH_USERS, CHANNEL, BOT_TOKEN, DB_URL, DB_NAME, LOG_CHANNEL
 
 
 SIZE_UNITS = ["B", "KB", "MB", "GB", "TB", "PB"]
