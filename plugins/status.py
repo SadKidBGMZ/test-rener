@@ -19,7 +19,7 @@ from psutil import (
 from pyrogram import Client, enums, filters
 from pyrogram.errors import FloodWait, RPCError
 
-from config import API_ID, API_HASH, STRING, AUTH_USERS, CHANNEL, BOT_TOKEN, DB_URL, DB_NAME, LOG_CHANNEL
+from config import API_ID, API_HASH, STRING, ADMIN, CHANNEL, BOT_TOKEN, DB_URL, DB_NAME, LOG_CHANNEL
 
 
 SIZE_UNITS = ["B", "KB", "MB", "GB", "TB", "PB"]
@@ -57,7 +57,7 @@ def get_readable_time(seconds: int) -> str:
     return result
 
 
-@Client.on_message(filters.command(["stats"]) & filters.user(AUTH_USERS))
+@Client.on_message(filters.command(["stats"]) & filters.user(ADMIN))
 async def statuss_(bot, update):
     currentTime = get_readable_time(time() - Start_Time)
     total, used, free, disk = disk_usage("/")
